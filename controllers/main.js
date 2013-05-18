@@ -83,7 +83,6 @@ var controller = {
     });
 
     if (connId) {
-      var conn = fileRegister.connection(req.params.file_id, connId);
       controller.sendAttachment(req.params.file_id, res);
     } else {
       controller.renderError(res);
