@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta content="en" http-equiv="Content-Language">
+    <title>Sharing of Big Files</title>
+    <link href="/css/app.css" media="screen" rel="stylesheet" type="text/css" />
+    <script src="/js/app.js"></script>
+    <script src="/js/lib/tmpl.js"></script>
+    <script src="/js/lib/deferred.js"></script>
+    <script src="/js/lib/file.js"></script>
+    <script src="/js/model/connection.js"></script>
+    <script src="/js/model/uploader.js"></script>
+    <script src="/js/page.js"></script>
+  </head>
+  <body>
+
+    <content id="wrapper">
+      <h1>Sharing of Big Files</h1>
+
+      <form name="file_upload" enctype="multipart/form-data">
+        <input name="file" type="file" />
+      </form>
+
+      <div id="file-details"></div>
+      <div id="file-upload-progress"></div>
+    </content>
+
+    <script type="text/html" id="tmpl-file-info">
+      <ul class="file-info ">
+        <li><strong>Name</strong> <span class="info"><?= name ?></span></li>
+        <li><strong>Type</strong> <span class="info"><?= type ?></span></li>
+        <li><strong>Size</strong> <span class="info"><?= size ?></span></li>
+        <li><strong>Url</strong> <span class="info"><a href="<?= url ?>" target="_blank"><?= url ?></a></span></li>
+      </ul>
+    </script>
+
+    <script type="text/html" id="tmpl-progress-bar">
+      <div class="progress-bar" data-conn-id="<?= connId ?>">
+        <span class="ratio"></span>
+        <span class="ratio-text">0%</span>
+      </div>
+    </script>
+
+  </body>
+</html>

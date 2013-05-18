@@ -1,0 +1,71 @@
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: 60px;
+  line-height: 100%;
+  text-align: center;
+}
+
+content#wrapper {
+  display: block;
+  width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.progress-bar {
+  position: relative;
+  height: 20px;
+  text-align: center;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+  border: 1px solid #0E90D2;
+  margin-bottom: 15px;
+}
+
+.progress-bar span {
+  display: block;
+  height: 20px;
+}
+
+.progress-bar .ratio {
+  position: absolute;
+  width: 0;
+  background: #0E90D2;
+  z-index: 10;
+}
+
+.progress-bar .ratio-text {
+  position: relative;
+  z-index: 20;
+}
+
+.file-info {
+  text-align: left;
+  list-style: none;
+}
+
+.file-info li {
+  overflow: hidden;
+  list-style-type: none;
+  border-bottom: 1px dotted #D6D6D6;
+  margin: 15px;
+}
+
+.file-info strong {
+  float: left;
+  width: 85px;
+}
+
+.file-info .info {
+  text-align: right;
+  float: right;
+  width: 330px;
+}
